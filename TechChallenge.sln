@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.App", "TechChallenge.App\TechChallenge.App.csproj", "{22B6EB11-0779-4171-B60E-1FD6DACE4A42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Model", "TechChallenge.Model\TechChallenge.Model.csproj", "{E03D3CC2-E9DD-49CA-8877-25BAF048687C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.DAL", "TechChallenge.DAL\TechChallenge.DAL.csproj", "{2A434291-8A58-4CE5-8D65-EC780A1CB50E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{22B6EB11-0779-4171-B60E-1FD6DACE4A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22B6EB11-0779-4171-B60E-1FD6DACE4A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22B6EB11-0779-4171-B60E-1FD6DACE4A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03D3CC2-E9DD-49CA-8877-25BAF048687C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03D3CC2-E9DD-49CA-8877-25BAF048687C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03D3CC2-E9DD-49CA-8877-25BAF048687C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03D3CC2-E9DD-49CA-8877-25BAF048687C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A434291-8A58-4CE5-8D65-EC780A1CB50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A434291-8A58-4CE5-8D65-EC780A1CB50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A434291-8A58-4CE5-8D65-EC780A1CB50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A434291-8A58-4CE5-8D65-EC780A1CB50E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
