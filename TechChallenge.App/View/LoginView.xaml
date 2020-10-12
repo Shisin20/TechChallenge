@@ -1,0 +1,54 @@
+﻿<Page x:Class="TechChallenge.App.View.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="LoginView"
+        Height="450"
+        Width="800"
+        DataContext="{Binding Source={StaticResource mainViewModelLocator}, Path=LoginViewModel}"
+        Loaded="Page_Loaded">
+    <Page.Resources>
+        <Thickness x:Key="MarginSmallLTRB">0,2,2,2</Thickness>
+    </Page.Resources>
+    <Grid VerticalAlignment="Center"
+          HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <GroupBox Width="200"
+                  Height="150">
+            <StackPanel>
+                <Label x:Name="LabelControlUserName"
+                       Content="User name" />
+                <TextBox x:Name="TextBoxUserName"
+                         Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Height="20" />
+
+                <Label x:Name="LabelControlPassword"
+                       Content="Password" />
+                <PasswordBox x:Name="PasswordBox"
+                             Height="20" />
+
+                <TextBlock x:Name="TextBlockLoginFailed"
+                           Text="{Binding LoginError, Mode=OneWay}"
+                           Foreground="Red"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+        </GroupBox>
+        <Border Grid.Row="1">
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button x:Name="ButtonLogin"
+                        Command="{Binding LoginCommand}"
+                        CommandParameter="{Binding ElementName=PasswordBox}"
+                        Margin="{StaticResource MarginSmallLTRB}"
+                        Content="Login"
+                        IsDefault="True"
+                        MinWidth="80" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
